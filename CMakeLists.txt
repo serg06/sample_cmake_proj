@@ -42,7 +42,7 @@ foreach( OUTPUTCONFIG ${CMAKE_CONFIGURATION_TYPES} )
 endforeach( OUTPUTCONFIG CMAKE_CONFIGURATION_TYPES )
 
 # add source files (so they compile)
-source_group(Shaders FILES ${shaders})
+add_executable(${PROJECT_NAME} WIN32 ${sources})
 
 # link executable to libraries
 set_property(TARGET ${PROJECT_NAME} PROPERTY DEBUG_POSTFIX _d) # _dab on 'em
