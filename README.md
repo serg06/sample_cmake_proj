@@ -8,6 +8,7 @@ To start coding:
 - Put include files into include/
 - Put and compiled libraries into lib/
 - `cmake .. [-G generator-name]`
+- Open `build/solutionname.sln` with VS
 
 Adding features:
 - To add projects that your project relies on, use `add_library(proj_name file1 file2 ...)`
